@@ -12,9 +12,7 @@ function exportAsPng() {
     html2canvas(document.querySelector("body")).then(canvas => {
         canvas.toBlob(
             blob => {  
-                let file = new Blob([blob], {type: "application/octet-strem"});
-                let blobUrl = URL.createObjectURL(file);
-                window.location.href = blobUrl;
+                saveAs(blob, "git-cheat-sheet.png");
             }
         )
     });
