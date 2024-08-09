@@ -1,4 +1,5 @@
-document.querySelectorAll('div').forEach(item => {
+
+/*document.querySelectorAll('div').forEach(item => {
         item.onmouseover = () => {
             item.style.color = "red"
         }
@@ -6,7 +7,7 @@ document.querySelectorAll('div').forEach(item => {
             item.style.color = "black"
         }
     }
-)
+)*/
 
 function exportAsPng() {
     html2canvas(document.querySelector("body")).then(canvas => {
@@ -16,5 +17,4 @@ function exportAsPng() {
             }
         )
     });
-
 }
